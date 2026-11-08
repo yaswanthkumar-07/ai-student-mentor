@@ -1,0 +1,377 @@
+{
+  "description": "Curated public learning resources. Verify URLs before relying on them.",
+  "learning_resources": [
+    {
+      "id": "res_001",
+      "title": "CS50x: Introduction to Computer Science",
+      "provider": "Harvard University",
+      "topic": "Computer Science Fundamentals",
+      "skill_ids": [
+        "problem_solving",
+        "data_structures",
+        "algorithms"
+      ],
+      "resource_type": "Course",
+      "url": "https://cs50.harvard.edu/x/",
+      "difficulty": "Beginner"
+    },
+    {
+      "id": "res_002",
+      "title": "The Python Tutorial",
+      "provider": "Python Software Foundation",
+      "topic": "Python",
+      "skill_ids": [
+        "python"
+      ],
+      "resource_type": "Documentation",
+      "url": "https://docs.python.org/3/tutorial/",
+      "difficulty": "Beginner"
+    },
+    {
+      "id": "res_003",
+      "title": "Real Python Tutorials",
+      "provider": "Real Python",
+      "topic": "Python",
+      "skill_ids": [
+        "python"
+      ],
+      "resource_type": "Tutorial",
+      "url": "https://realpython.com/",
+      "difficulty": "Intermediate"
+    },
+    {
+      "id": "res_004",
+      "title": "Kaggle Learn: Intro to Machine Learning",
+      "provider": "Kaggle",
+      "topic": "Machine Learning",
+      "skill_ids": [
+        "machine_learning",
+        "python"
+      ],
+      "resource_type": "Interactive",
+      "url": "https://www.kaggle.com/learn/intro-to-machine-learning",
+      "difficulty": "Beginner"
+    },
+    {
+      "id": "res_005",
+      "title": "Kaggle Learn: Pandas",
+      "provider": "Kaggle",
+      "topic": "Data Analysis",
+      "skill_ids": [
+        "pandas_numpy",
+        "python"
+      ],
+      "resource_type": "Interactive",
+      "url": "https://www.kaggle.com/learn/pandas",
+      "difficulty": "Beginner"
+    },
+    {
+      "id": "res_006",
+      "title": "pandas: Getting Started",
+      "provider": "pandas",
+      "topic": "Data Analysis",
+      "skill_ids": [
+        "pandas_numpy"
+      ],
+      "resource_type": "Documentation",
+      "url": "https://pandas.pydata.org/docs/getting_started/index.html",
+      "difficulty": "Beginner"
+    },
+    {
+      "id": "res_007",
+      "title": "scikit-learn User Guide",
+      "provider": "scikit-learn",
+      "topic": "Machine Learning",
+      "skill_ids": [
+        "machine_learning"
+      ],
+      "resource_type": "Documentation",
+      "url": "https://scikit-learn.org/stable/user_guide.html",
+      "difficulty": "Intermediate"
+    },
+    {
+      "id": "res_008",
+      "title": "Machine Learning Specialization",
+      "provider": "Coursera (DeepLearning.AI and Stanford)",
+      "topic": "Machine Learning",
+      "skill_ids": [
+        "machine_learning",
+        "statistics"
+      ],
+      "resource_type": "Course",
+      "url": "https://www.coursera.org/specializations/machine-learning-introduction",
+      "difficulty": "Beginner"
+    },
+    {
+      "id": "res_009",
+      "title": "Practical Deep Learning for Coders",
+      "provider": "fast.ai",
+      "topic": "Deep Learning",
+      "skill_ids": [
+        "deep_learning",
+        "python"
+      ],
+      "resource_type": "Course",
+      "url": "https://course.fast.ai/",
+      "difficulty": "Intermediate"
+    },
+    {
+      "id": "res_010",
+      "title": "Statistics and Probability",
+      "provider": "Khan Academy",
+      "topic": "Statistics",
+      "skill_ids": [
+        "statistics"
+      ],
+      "resource_type": "Course",
+      "url": "https://www.khanacademy.org/math/statistics-probability",
+      "difficulty": "Beginner"
+    },
+    {
+      "id": "res_011",
+      "title": "SQLBolt: Learn SQL",
+      "provider": "SQLBolt",
+      "topic": "SQL",
+      "skill_ids": [
+        "sql"
+      ],
+      "resource_type": "Interactive",
+      "url": "https://sqlbolt.com/",
+      "difficulty": "Beginner"
+    },
+    {
+      "id": "res_012",
+      "title": "Learn Web Development",
+      "provider": "MDN Web Docs",
+      "topic": "Web Development",
+      "skill_ids": [
+        "html_css",
+        "javascript"
+      ],
+      "resource_type": "Tutorial",
+      "url": "https://developer.mozilla.org/en-US/docs/Learn_web_development",
+      "difficulty": "Beginner"
+    },
+    {
+      "id": "res_013",
+      "title": "freeCodeCamp Curriculum",
+      "provider": "freeCodeCamp",
+      "topic": "Web Development",
+      "skill_ids": [
+        "html_css",
+        "javascript",
+        "frontend_frameworks"
+      ],
+      "resource_type": "Course",
+      "url": "https://www.freecodecamp.org/learn/",
+      "difficulty": "Beginner"
+    },
+    {
+      "id": "res_014",
+      "title": "Learn React",
+      "provider": "React",
+      "topic": "Frontend Development",
+      "skill_ids": [
+        "frontend_frameworks",
+        "javascript"
+      ],
+      "resource_type": "Documentation",
+      "url": "https://react.dev/learn",
+      "difficulty": "Intermediate"
+    },
+    {
+      "id": "res_015",
+      "title": "Flask Tutorial",
+      "provider": "Pallets Projects",
+      "topic": "Backend Development",
+      "skill_ids": [
+        "backend_frameworks",
+        "python",
+        "rest_apis"
+      ],
+      "resource_type": "Documentation",
+      "url": "https://flask.palletsprojects.com/en/stable/tutorial/",
+      "difficulty": "Intermediate"
+    },
+    {
+      "id": "res_016",
+      "title": "Pro Git Book",
+      "provider": "Git",
+      "topic": "Version Control",
+      "skill_ids": [
+        "git"
+      ],
+      "resource_type": "Book",
+      "url": "https://git-scm.com/book/en/v2",
+      "difficulty": "Beginner"
+    },
+    {
+      "id": "res_017",
+      "title": "Docker: Get Started",
+      "provider": "Docker",
+      "topic": "Containers",
+      "skill_ids": [
+        "docker"
+      ],
+      "resource_type": "Documentation",
+      "url": "https://docs.docker.com/get-started/",
+      "difficulty": "Beginner"
+    },
+    {
+      "id": "res_018",
+      "title": "Linux Journey",
+      "provider": "Linux Journey",
+      "topic": "Linux",
+      "skill_ids": [
+        "linux"
+      ],
+      "resource_type": "Interactive",
+      "url": "https://linuxjourney.com/",
+      "difficulty": "Beginner"
+    },
+    {
+      "id": "res_019",
+      "title": "OWASP Top Ten",
+      "provider": "OWASP Foundation",
+      "topic": "Application Security",
+      "skill_ids": [
+        "security_fundamentals",
+        "threat_analysis"
+      ],
+      "resource_type": "Documentation",
+      "url": "https://owasp.org/www-project-top-ten/",
+      "difficulty": "Intermediate"
+    },
+    {
+      "id": "res_020",
+      "title": "TryHackMe Learning Paths",
+      "provider": "TryHackMe",
+      "topic": "Cybersecurity",
+      "skill_ids": [
+        "security_fundamentals",
+        "networking",
+        "threat_analysis"
+      ],
+      "resource_type": "Interactive",
+      "url": "https://tryhackme.com/",
+      "difficulty": "Beginner"
+    },
+    {
+      "id": "res_021",
+      "title": "Google UX Design Certificate",
+      "provider": "Grow with Google",
+      "topic": "UX Design",
+      "skill_ids": [
+        "ux_research",
+        "wireframing_prototyping",
+        "ui_design"
+      ],
+      "resource_type": "Course",
+      "url": "https://grow.google/certificates/ux-design/",
+      "difficulty": "Beginner"
+    },
+    {
+      "id": "res_022",
+      "title": "Figma Help Center and Tutorials",
+      "provider": "Figma",
+      "topic": "UI Design",
+      "skill_ids": [
+        "ui_design",
+        "wireframing_prototyping"
+      ],
+      "resource_type": "Documentation",
+      "url": "https://help.figma.com/hc/en-us",
+      "difficulty": "Beginner"
+    },
+    {
+      "id": "res_023",
+      "title": "Microsoft Learn: Power BI",
+      "provider": "Microsoft",
+      "topic": "Business Intelligence",
+      "skill_ids": [
+        "power_bi",
+        "data_visualization"
+      ],
+      "resource_type": "Course",
+      "url": "https://learn.microsoft.com/en-us/training/powerplatform/power-bi/",
+      "difficulty": "Beginner"
+    },
+    {
+      "id": "res_024",
+      "title": "AWS Skill Builder",
+      "provider": "Amazon Web Services",
+      "topic": "Cloud Computing",
+      "skill_ids": [
+        "cloud_basics"
+      ],
+      "resource_type": "Course",
+      "url": "https://skillbuilder.aws/",
+      "difficulty": "Beginner"
+    },
+    {
+      "id": "res_025",
+      "title": "Google Data Analytics Certificate",
+      "provider": "Grow with Google",
+      "topic": "Data Analytics",
+      "skill_ids": [
+        "sql",
+        "excel",
+        "data_visualization",
+        "communication"
+      ],
+      "resource_type": "Course",
+      "url": "https://grow.google/certificates/data-analytics/",
+      "difficulty": "Beginner"
+    },
+    {
+      "id": "res_026",
+      "title": "GitHub Skills",
+      "provider": "GitHub",
+      "topic": "Version Control and CI",
+      "skill_ids": [
+        "git",
+        "ci_cd"
+      ],
+      "resource_type": "Interactive",
+      "url": "https://skills.github.com/",
+      "difficulty": "Beginner"
+    },
+    {
+      "id": "res_027",
+      "title": "Java Programming MOOC",
+      "provider": "University of Helsinki",
+      "topic": "Java",
+      "skill_ids": [
+        "java",
+        "data_structures"
+      ],
+      "resource_type": "Course",
+      "url": "https://java-programming.mooc.fi/",
+      "difficulty": "Beginner"
+    },
+    {
+      "id": "res_028",
+      "title": "Android Basics with Compose",
+      "provider": "Android Developers",
+      "topic": "Mobile Development",
+      "skill_ids": [
+        "mobile_development"
+      ],
+      "resource_type": "Course",
+      "url": "https://developer.android.com/courses/android-basics-compose/course",
+      "difficulty": "Beginner"
+    },
+    {
+      "id": "res_029",
+      "title": "Technical Writing Courses",
+      "provider": "Google Developers",
+      "topic": "Technical Writing",
+      "skill_ids": [
+        "technical_writing"
+      ],
+      "resource_type": "Course",
+      "url": "https://developers.google.com/tech-writing",
+      "difficulty": "Beginner"
+    }
+  ]
+}
