@@ -1,0 +1,214 @@
+{
+  "description": "Fictional demo student profiles.",
+  "students": [
+    {
+      "id": "stu_001",
+      "name": "Ananya Reddy",
+      "email": "ananya.sample@example.com",
+      "education": {
+        "level": "Undergraduate",
+        "field": "B.Tech Computer Science",
+        "institution": "Sample Institute of Technology",
+        "year_of_study": 3
+      },
+      "interests": [
+        "data analysis",
+        "artificial intelligence",
+        "sports analytics"
+      ],
+      "skills": [
+        {
+          "skill_id": "python",
+          "level": "intermediate"
+        },
+        {
+          "skill_id": "sql",
+          "level": "beginner"
+        },
+        {
+          "skill_id": "statistics",
+          "level": "beginner"
+        },
+        {
+          "skill_id": "pandas_numpy",
+          "level": "beginner"
+        },
+        {
+          "skill_id": "communication",
+          "level": "intermediate"
+        }
+      ],
+      "career_goals": [
+        "data_scientist"
+      ],
+      "preferred_location": "Hyderabad, India",
+      "is_demo": true
+    },
+    {
+      "id": "stu_002",
+      "name": "Rahul Verma",
+      "email": "rahul.sample@example.com",
+      "education": {
+        "level": "Undergraduate",
+        "field": "B.Sc Information Technology",
+        "institution": "Sample College of Science",
+        "year_of_study": 2
+      },
+      "interests": [
+        "web design",
+        "startups",
+        "gaming"
+      ],
+      "skills": [
+        {
+          "skill_id": "html_css",
+          "level": "intermediate"
+        },
+        {
+          "skill_id": "javascript",
+          "level": "beginner"
+        },
+        {
+          "skill_id": "git",
+          "level": "beginner"
+        },
+        {
+          "skill_id": "teamwork",
+          "level": "intermediate"
+        }
+      ],
+      "career_goals": [
+        "full_stack_web_developer",
+        "frontend_developer"
+      ],
+      "preferred_location": "Remote (India)",
+      "is_demo": true
+    },
+    {
+      "id": "stu_003",
+      "name": "Priya Nair",
+      "email": "priya.sample@example.com",
+      "education": {
+        "level": "Undergraduate",
+        "field": "BCA",
+        "institution": "Sample University of Applied Computing",
+        "year_of_study": 3
+      },
+      "interests": [
+        "ethical hacking",
+        "networks",
+        "open source"
+      ],
+      "skills": [
+        {
+          "skill_id": "networking",
+          "level": "beginner"
+        },
+        {
+          "skill_id": "linux",
+          "level": "intermediate"
+        },
+        {
+          "skill_id": "python",
+          "level": "beginner"
+        },
+        {
+          "skill_id": "security_fundamentals",
+          "level": "beginner"
+        },
+        {
+          "skill_id": "problem_solving",
+          "level": "intermediate"
+        }
+      ],
+      "career_goals": [
+        "cybersecurity_analyst"
+      ],
+      "preferred_location": "Bengaluru, India",
+      "is_demo": true
+    },
+    {
+      "id": "stu_004",
+      "name": "Karthik Sharma",
+      "email": "karthik.sample@example.com",
+      "education": {
+        "level": "Undergraduate",
+        "field": "B.Com",
+        "institution": "Sample Commerce College",
+        "year_of_study": 3
+      },
+      "interests": [
+        "business strategy",
+        "analytics",
+        "consulting"
+      ],
+      "skills": [
+        {
+          "skill_id": "excel",
+          "level": "advanced"
+        },
+        {
+          "skill_id": "sql",
+          "level": "beginner"
+        },
+        {
+          "skill_id": "communication",
+          "level": "advanced"
+        },
+        {
+          "skill_id": "requirements_analysis",
+          "level": "beginner"
+        },
+        {
+          "skill_id": "time_management",
+          "level": "intermediate"
+        }
+      ],
+      "career_goals": [
+        "business_analyst",
+        "data_analyst"
+      ],
+      "preferred_location": "Chennai, India",
+      "is_demo": true
+    },
+    {
+      "id": "stu_005",
+      "name": "Sneha Iyer",
+      "email": "sneha.sample@example.com",
+      "education": {
+        "level": "Undergraduate",
+        "field": "B.Des",
+        "institution": "Sample School of Design",
+        "year_of_study": 4
+      },
+      "interests": [
+        "user experience",
+        "illustration",
+        "accessibility"
+      ],
+      "skills": [
+        {
+          "skill_id": "ui_design",
+          "level": "intermediate"
+        },
+        {
+          "skill_id": "ux_research",
+          "level": "beginner"
+        },
+        {
+          "skill_id": "wireframing_prototyping",
+          "level": "intermediate"
+        },
+        {
+          "skill_id": "communication",
+          "level": "intermediate"
+        }
+      ],
+      "career_goals": [
+        "ui_ux_designer"
+      ],
+      "preferred_location": "Pune, India",
+      "is_demo": true
+    }
+  ]
+}

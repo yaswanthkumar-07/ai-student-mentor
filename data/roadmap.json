@@ -1,0 +1,571 @@
+{
+  "description": "Demo career learning roadmaps.",
+  "roadmaps": [
+    {
+      "id": "roadmap_data_scientist",
+      "career_id": "data_scientist",
+      "title": "Data Scientist Roadmap",
+      "level": "Beginner",
+      "total_weeks": 27,
+      "stages": [
+        {
+          "order": 1,
+          "title": "Programming Foundations",
+          "skills": [
+            "python",
+            "git",
+            "problem_solving"
+          ],
+          "estimated_weeks": 4,
+          "milestones": [
+            "Write Python scripts with functions and file I/O",
+            "Publish a first repository on GitHub"
+          ]
+        },
+        {
+          "order": 2,
+          "title": "Data Wrangling & Statistics",
+          "skills": [
+            "sql",
+            "pandas_numpy",
+            "statistics"
+          ],
+          "estimated_weeks": 6,
+          "milestones": [
+            "Clean and analyse a real CSV dataset",
+            "Explain a hypothesis test in plain language"
+          ]
+        },
+        {
+          "order": 3,
+          "title": "Visual Storytelling",
+          "skills": [
+            "data_visualization",
+            "communication"
+          ],
+          "estimated_weeks": 3,
+          "milestones": [
+            "Build a chart-based data story",
+            "Present findings to a non-technical audience"
+          ]
+        },
+        {
+          "order": 4,
+          "title": "Machine Learning",
+          "skills": [
+            "machine_learning"
+          ],
+          "estimated_weeks": 8,
+          "milestones": [
+            "Train and compare three models with scikit-learn",
+            "Finish a beginner Kaggle competition"
+          ]
+        },
+        {
+          "order": 5,
+          "title": "Specialise & Showcase",
+          "skills": [
+            "deep_learning",
+            "technical_writing"
+          ],
+          "estimated_weeks": 6,
+          "milestones": [
+            "Complete one deep learning project",
+            "Write two portfolio case studies"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "roadmap_machine_learning_engineer",
+      "career_id": "machine_learning_engineer",
+      "title": "Machine Learning Engineer Roadmap",
+      "level": "Intermediate",
+      "total_weeks": 27,
+      "stages": [
+        {
+          "order": 1,
+          "title": "Programming & Maths Foundations",
+          "skills": [
+            "python",
+            "git",
+            "statistics"
+          ],
+          "estimated_weeks": 5,
+          "milestones": [
+            "Build a command-line tool in Python",
+            "Review linear algebra and probability"
+          ]
+        },
+        {
+          "order": 2,
+          "title": "Core Machine Learning",
+          "skills": [
+            "pandas_numpy",
+            "machine_learning"
+          ],
+          "estimated_weeks": 8,
+          "milestones": [
+            "Tune and validate classical models",
+            "Deliver an end-to-end ML notebook"
+          ]
+        },
+        {
+          "order": 3,
+          "title": "Deep Learning",
+          "skills": [
+            "deep_learning"
+          ],
+          "estimated_weeks": 8,
+          "milestones": [
+            "Train a CNN on an image dataset",
+            "Apply regularisation to reduce overfitting"
+          ]
+        },
+        {
+          "order": 4,
+          "title": "MLOps Basics",
+          "skills": [
+            "docker",
+            "rest_apis",
+            "ci_cd"
+          ],
+          "estimated_weeks": 6,
+          "milestones": [
+            "Serve a model through a Flask API",
+            "Containerise and deploy the service"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "roadmap_data_analyst",
+      "career_id": "data_analyst",
+      "title": "Data Analyst Roadmap",
+      "level": "Beginner",
+      "total_weeks": 18,
+      "stages": [
+        {
+          "order": 1,
+          "title": "Spreadsheets & Statistics",
+          "skills": [
+            "excel",
+            "statistics"
+          ],
+          "estimated_weeks": 4,
+          "milestones": [
+            "Build a pivot-table report",
+            "Calculate and interpret summary statistics"
+          ]
+        },
+        {
+          "order": 2,
+          "title": "Databases & SQL",
+          "skills": [
+            "sql"
+          ],
+          "estimated_weeks": 4,
+          "milestones": [
+            "Write joins and aggregations",
+            "Answer business questions from a sample database"
+          ]
+        },
+        {
+          "order": 3,
+          "title": "Dashboards & Storytelling",
+          "skills": [
+            "data_visualization",
+            "power_bi",
+            "communication"
+          ],
+          "estimated_weeks": 5,
+          "milestones": [
+            "Publish an interactive dashboard",
+            "Present insights in a short briefing"
+          ]
+        },
+        {
+          "order": 4,
+          "title": "Python for Analysis",
+          "skills": [
+            "python",
+            "pandas_numpy"
+          ],
+          "estimated_weeks": 5,
+          "milestones": [
+            "Automate a recurring report",
+            "Publish an analysis portfolio"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "roadmap_full_stack_web_developer",
+      "career_id": "full_stack_web_developer",
+      "title": "Full Stack Web Developer Roadmap",
+      "level": "Beginner",
+      "total_weeks": 23,
+      "stages": [
+        {
+          "order": 1,
+          "title": "Web Foundations",
+          "skills": [
+            "html_css",
+            "javascript",
+            "git"
+          ],
+          "estimated_weeks": 6,
+          "milestones": [
+            "Build a responsive portfolio site",
+            "Use Git branches and pull requests"
+          ]
+        },
+        {
+          "order": 2,
+          "title": "Frontend Frameworks",
+          "skills": [
+            "frontend_frameworks"
+          ],
+          "estimated_weeks": 6,
+          "milestones": [
+            "Build a component-based single-page app",
+            "Consume a public API"
+          ]
+        },
+        {
+          "order": 3,
+          "title": "Backend & APIs",
+          "skills": [
+            "backend_frameworks",
+            "rest_apis"
+          ],
+          "estimated_weeks": 6,
+          "milestones": [
+            "Design and document a REST API",
+            "Add input validation and error handling"
+          ]
+        },
+        {
+          "order": 4,
+          "title": "Data & Deployment",
+          "skills": [
+            "database_design",
+            "sql",
+            "cloud_basics"
+          ],
+          "estimated_weeks": 5,
+          "milestones": [
+            "Model a relational schema",
+            "Deploy a full stack app online"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "roadmap_backend_developer",
+      "career_id": "backend_developer",
+      "title": "Backend Developer Roadmap",
+      "level": "Beginner",
+      "total_weeks": 20,
+      "stages": [
+        {
+          "order": 1,
+          "title": "Language & CS Basics",
+          "skills": [
+            "python",
+            "data_structures",
+            "algorithms",
+            "git"
+          ],
+          "estimated_weeks": 6,
+          "milestones": [
+            "Solve 30 beginner coding problems",
+            "Structure a multi-file Python project"
+          ]
+        },
+        {
+          "order": 2,
+          "title": "Web Services",
+          "skills": [
+            "backend_frameworks",
+            "rest_apis"
+          ],
+          "estimated_weeks": 5,
+          "milestones": [
+            "Build a CRUD API",
+            "Add authentication to a demo service"
+          ]
+        },
+        {
+          "order": 3,
+          "title": "Databases",
+          "skills": [
+            "sql",
+            "database_design"
+          ],
+          "estimated_weeks": 4,
+          "milestones": [
+            "Design a normalised schema",
+            "Optimise a slow query with an index"
+          ]
+        },
+        {
+          "order": 4,
+          "title": "Quality & Delivery",
+          "skills": [
+            "software_testing",
+            "docker",
+            "ci_cd"
+          ],
+          "estimated_weeks": 5,
+          "milestones": [
+            "Reach meaningful test coverage",
+            "Ship through an automated pipeline"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "roadmap_devops_engineer",
+      "career_id": "devops_engineer",
+      "title": "DevOps Engineer Roadmap",
+      "level": "Intermediate",
+      "total_weeks": 22,
+      "stages": [
+        {
+          "order": 1,
+          "title": "Linux & Networking",
+          "skills": [
+            "linux",
+            "networking",
+            "git"
+          ],
+          "estimated_weeks": 6,
+          "milestones": [
+            "Administer a Linux VM from the shell",
+            "Diagnose a DNS or connectivity problem"
+          ]
+        },
+        {
+          "order": 2,
+          "title": "Scripting & Automation",
+          "skills": [
+            "python"
+          ],
+          "estimated_weeks": 4,
+          "milestones": [
+            "Automate a routine task with a script",
+            "Parse logs and report errors"
+          ]
+        },
+        {
+          "order": 3,
+          "title": "Containers & CI/CD",
+          "skills": [
+            "docker",
+            "ci_cd"
+          ],
+          "estimated_weeks": 6,
+          "milestones": [
+            "Containerise a web service",
+            "Create a build-test-deploy pipeline"
+          ]
+        },
+        {
+          "order": 4,
+          "title": "Cloud & Security",
+          "skills": [
+            "cloud_basics",
+            "security_fundamentals"
+          ],
+          "estimated_weeks": 6,
+          "milestones": [
+            "Deploy infrastructure on a free-tier cloud",
+            "Apply least-privilege access controls"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "roadmap_cybersecurity_analyst",
+      "career_id": "cybersecurity_analyst",
+      "title": "Cybersecurity Analyst Roadmap",
+      "level": "Beginner",
+      "total_weeks": 22,
+      "stages": [
+        {
+          "order": 1,
+          "title": "Systems & Network Foundations",
+          "skills": [
+            "networking",
+            "linux"
+          ],
+          "estimated_weeks": 6,
+          "milestones": [
+            "Capture and read network traffic",
+            "Harden a Linux VM"
+          ]
+        },
+        {
+          "order": 2,
+          "title": "Security Principles",
+          "skills": [
+            "security_fundamentals",
+            "cryptography_basics"
+          ],
+          "estimated_weeks": 5,
+          "milestones": [
+            "Explain the OWASP Top Ten",
+            "Use hashing and encryption correctly"
+          ]
+        },
+        {
+          "order": 3,
+          "title": "Threat Detection",
+          "skills": [
+            "threat_analysis",
+            "python"
+          ],
+          "estimated_weeks": 6,
+          "milestones": [
+            "Triage sample alerts",
+            "Automate log analysis with Python"
+          ]
+        },
+        {
+          "order": 4,
+          "title": "Hands-on Practice",
+          "skills": [
+            "threat_analysis",
+            "technical_writing"
+          ],
+          "estimated_weeks": 5,
+          "milestones": [
+            "Complete guided lab rooms",
+            "Write an incident report"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "roadmap_ui_ux_designer",
+      "career_id": "ui_ux_designer",
+      "title": "UI/UX Designer Roadmap",
+      "level": "Beginner",
+      "total_weeks": 17,
+      "stages": [
+        {
+          "order": 1,
+          "title": "Design Principles",
+          "skills": [
+            "ui_design",
+            "critical_thinking"
+          ],
+          "estimated_weeks": 4,
+          "milestones": [
+            "Critique three existing interfaces",
+            "Create a style guide"
+          ]
+        },
+        {
+          "order": 2,
+          "title": "User Research",
+          "skills": [
+            "ux_research",
+            "communication"
+          ],
+          "estimated_weeks": 4,
+          "milestones": [
+            "Run five user interviews",
+            "Summarise findings as personas"
+          ]
+        },
+        {
+          "order": 3,
+          "title": "Wireframes & Prototypes",
+          "skills": [
+            "wireframing_prototyping"
+          ],
+          "estimated_weeks": 5,
+          "milestones": [
+            "Produce low and high fidelity prototypes",
+            "Run a usability test"
+          ]
+        },
+        {
+          "order": 4,
+          "title": "Portfolio & Handoff",
+          "skills": [
+            "html_css",
+            "communication"
+          ],
+          "estimated_weeks": 4,
+          "milestones": [
+            "Publish two case studies",
+            "Hand designs to developers with specs"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "roadmap_cloud_engineer",
+      "career_id": "cloud_engineer",
+      "title": "Cloud Engineer Roadmap",
+      "level": "Intermediate",
+      "total_weeks": 22,
+      "stages": [
+        {
+          "order": 1,
+          "title": "Linux & Networking",
+          "skills": [
+            "linux",
+            "networking"
+          ],
+          "estimated_weeks": 6,
+          "milestones": [
+            "Configure a virtual network",
+            "Manage services on Linux"
+          ]
+        },
+        {
+          "order": 2,
+          "title": "Cloud Fundamentals",
+          "skills": [
+            "cloud_basics"
+          ],
+          "estimated_weeks": 5,
+          "milestones": [
+            "Launch compute and storage resources",
+            "Estimate cloud costs"
+          ]
+        },
+        {
+          "order": 3,
+          "title": "Automation & Containers",
+          "skills": [
+            "python",
+            "docker"
+          ],
+          "estimated_weeks": 6,
+          "milestones": [
+            "Script resource management",
+            "Run containers on a cloud platform"
+          ]
+        },
+        {
+          "order": 4,
+          "title": "Security & Operations",
+          "skills": [
+            "security_fundamentals",
+            "ci_cd"
+          ],
+          "estimated_weeks": 5,
+          "milestones": [
+            "Apply identity and access policies",
+            "Add monitoring and alerts"
+          ]
+        }
+      ]
+    }
+  ]
+}
