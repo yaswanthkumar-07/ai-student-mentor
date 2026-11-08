@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="../assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="../css/main.css">
+  <title>Career Explorer - AI Student Mentor</title>
+</head>
+<body>
+  <div class="site-wrapper">
+    <header class="navbar">
+      <div class="nav-container">
+        <a class="brand" href="../index.html">
+          <div class="brand-icon">🎓</div>
+          <div>
+            <strong>AI Student Mentor</strong>
+            <small style="display: block; font-size: 0.75rem; color: var(--text-muted); font-weight: normal;">Career Journey Platform</small>
+          </div>
+        </a>
+        <nav class="nav-links">
+          <a href="../index.html">Home</a>
+          <a href="../login.html">Login</a>
+          <a href="../dashboard.html">Dashboard</a>
+          <a href="career-explorer.html" class="active">Career Explorer</a>
+          <a href="skill-gap.html">Skill Gap</a>
+          <a href="learning-roadmap.html">Learning Roadmap</a>
+        </nav>
+        <div class="nav-user-status">
+          <a id="nav-user-pill" href="../login.html" class="user-pill" title="Click to view or switch profile">
+            <div class="avatar-initial">?</div>
+            <span>Demo Profile</span>
+          </a>
+          <span id="backend-status" class="badge">Checking...</span>
+        </div>
+      </div>
+    </header>
+
+    <main class="main-content">
+      <!-- Page Header -->
+      <div style="margin-bottom: 2rem;">
+        <div style="display: flex; justify-content: space-between; align-items: flex-start; flex-wrap: wrap; gap: 1rem;">
+          <div>
+            <span class="badge badge-primary" style="margin-bottom: 0.5rem;">Batch 2 Core Module</span>
+            <h1>🧭 Career Explorer</h1>
+            <p class="lead-text" style="margin-bottom: 0;">
+              Discover career paths across AI, engineering, cloud, and design. Compare required competencies and set your target career.
+            </p>
+          </div>
+          <a href="../dashboard.html" class="btn btn-outline">&larr; Back to Dashboard</a>
+        </div>
+      </div>
+
+      <!-- Current Target Career Banner -->
+      <div id="target-career-banner" class="alert alert-info" style="display: none; align-items: center; justify-content: space-between;">
+        <div style="display: flex; align-items: center; gap: 0.75rem; flex-wrap: wrap;">
+          <span style="font-size: 1.25rem;">🎯</span>
+          <div>
+            <strong>Current Target Career:</strong> <span id="target-career-name" style="font-weight: 700;">Data Scientist</span>
+            <span id="target-career-cat" class="badge badge-indigo" style="margin-left: 0.5rem;">Category</span>
+          </div>
+        </div>
+        <div style="display: flex; gap: 0.5rem; flex-wrap: wrap;">
+          <button id="view-target-btn" class="btn btn-sm btn-secondary" type="button">View Path Details</button>
+          <a id="target-skill-gap-btn" href="skill-gap.html" class="btn btn-sm btn-primary">Analyze Skill Gap &rarr;</a>
+          <a id="target-roadmap-btn" href="learning-roadmap.html" class="btn btn-sm btn-outline">Roadmap &rarr;</a>
+        </div>
+      </div>
+
+      <!-- Search & Filters Toolbar -->
+      <div class="toolbar">
+        <div class="search-box">
+          <span class="search-icon">🔍</span>
+          <input
+            type="search"
+            id="career-search-input"
+            class="search-input"
+            placeholder="Search careers by title, keyword, skill (e.g. Python, Machine Learning, React, Cloud)..."
+            aria-label="Search careers"
+          >
+        </div>
+        <div>
+          <small style="text-transform: uppercase; font-weight: 700; letter-spacing: 0.05em; color: var(--text-muted); display: block; margin-bottom: 0.5rem;">
+            Filter by Industry Category:
+          </small>
+          <div id="category-filters" class="filter-pills">
+            <button class="filter-btn active" data-category="all" type="button">All Categories</button>
+            <!-- Dynamic Category Pills -->
+          </div>
+        </div>
+      </div>
+
+      <!-- Results Count & Meta -->
+      <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem;">
+        <span id="careers-count-text" style="color: var(--text-secondary); font-size: 0.95rem; font-weight: 500;">
+          Loading career paths...
+        </span>
+      </div>
+
+      <!-- Loading State -->
+      <div id="careers-loading" class="loading-container">
+        <div class="spinner"></div>
+        <p>Fetching career paths and requirement data...</p>
+      </div>
+
+      <!-- Error State -->
+      <div id="careers-error" class="alert alert-danger" style="display: none;"></div>
+
+      <!-- Careers Grid -->
+      <div id="careers-grid" class="grid"></div>
+
+      <!-- Empty Filter State -->
+      <div id="careers-empty-filter" class="empty-state" style="display: none;">
+        <span class="empty-state-icon">🔎</span>
+        <h3>No Matching Careers</h3>
+        <p>No career paths matched your filter or search query. Try clearing your search term or picking a different category.</p>
+        <button id="reset-filters-btn" class="btn btn-secondary" type="button">Reset All Filters</button>
+      </div>
+    </main>
+
+    <!-- Career Detail Modal -->
+    <div id="career-modal-backdrop" class="modal-backdrop" role="dialog" aria-modal="true" aria-labelledby="modal-career-title">
+      <div class="modal-content">
+        <button id="modal-close-btn" class="modal-close-btn" type="button" aria-label="Close modal">&times;</button>
+        
+        <div style="display: flex; align-items: center; gap: 0.5rem; margin-bottom: 0.5rem;">
+          <span id="modal-career-category" class="badge badge-primary">Category</span>
+          <span id="modal-target-indicator" class="badge badge-success" style="display: none;">Current Target</span>
+        </div>
+
+        <h2 id="modal-career-title" style="margin-bottom: 0.75rem;">Career Title</h2>
+        <p id="modal-career-desc" style="font-size: 1.05rem; color: var(--text-secondary); line-height: 1.5; margin-bottom: 1.5rem;">Description</p>
+
+        <!-- Required Skills -->
+        <div class="modal-section">
+          <h4>Required Core Competencies</h4>
+          <div id="modal-required-skills" class="chips"></div>
+        </div>
+
+        <!-- Recommended Skills -->
+        <div class="modal-section">
+          <h4>Recommended & Advantageous Skills</h4>
+          <div id="modal-recommended-skills" class="chips"></div>
+        </div>
+
+        <!-- Prerequisites -->
+        <div class="modal-section">
+          <h4>Prerequisites & Recommended Background</h4>
+          <ul id="modal-prerequisites-list" style="margin: 0.5rem 0 0; padding-left: 1.25rem; color: var(--text-secondary); font-size: 0.95rem;"></ul>
+        </div>
+
+        <!-- Related Careers -->
+        <div class="modal-section">
+          <h4>Related Career Paths</h4>
+          <div id="modal-related-careers" class="chips"></div>
+        </div>
+
+        <!-- Modal Footer Actions -->
+        <div style="margin-top: 2rem; padding-top: 1.25rem; border-top: 1px solid var(--border); display: flex; justify-content: space-between; align-items: center; gap: 1rem; flex-wrap: wrap;">
+          <div style="display: flex; gap: 0.5rem; flex-wrap: wrap;">
+            <button id="modal-set-target-btn" class="btn btn-primary" type="button">
+              🎯 Set as My Target Career
+            </button>
+            <a id="modal-analyze-gap-btn" href="skill-gap.html" class="btn btn-outline" style="display: none;">
+              📊 Analyze Skill Gap
+            </a>
+          </div>
+          <button id="modal-dismiss-btn" class="btn btn-secondary" type="button">Close</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Toast Notification -->
+    <div id="career-toast" class="toast">
+      <span>🎯 Target career updated successfully!</span>
+    </div>
+
+    <footer class="site-footer">
+      <p>AI Student Mentor &copy; 2026. Demonstration Application. Built with Python Flask and Vanilla JavaScript.</p>
+    </footer>
+  </div>
+
+  <script src="../js/config.js"></script>
+  <script src="../js/utils.js"></script>
+  <script src="../js/api.js"></script>
+  <script src="../js/status.js"></script>
+  <script src="../js/career-explorer.js"></script>
+</body>
+</html>

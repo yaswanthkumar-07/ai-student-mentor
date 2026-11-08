@@ -1,0 +1,438 @@
+{
+  "description": "Demo project ideas linked to skills and careers.",
+  "projects": [
+    {
+      "id": "proj_portfolio_website",
+      "title": "Personal Portfolio Website",
+      "difficulty": "Beginner",
+      "description": "Responsive portfolio showcasing your projects and resume.",
+      "technologies": [
+        "HTML",
+        "CSS",
+        "JavaScript"
+      ],
+      "required_skills": [
+        "html_css",
+        "javascript",
+        "git"
+      ],
+      "estimated_completion": "1 week",
+      "career_ids": [
+        "frontend_developer",
+        "full_stack_web_developer"
+      ]
+    },
+    {
+      "id": "proj_todo_rest_api",
+      "title": "To-Do REST API",
+      "difficulty": "Beginner",
+      "description": "CRUD API for tasks with validation and SQLite storage.",
+      "technologies": [
+        "Python",
+        "Flask",
+        "SQLite"
+      ],
+      "required_skills": [
+        "python",
+        "backend_frameworks",
+        "rest_apis"
+      ],
+      "estimated_completion": "1 week",
+      "career_ids": [
+        "backend_developer",
+        "full_stack_web_developer",
+        "software_engineer"
+      ]
+    },
+    {
+      "id": "proj_movie_ratings_eda",
+      "title": "Movie Ratings Exploratory Analysis",
+      "difficulty": "Beginner",
+      "description": "Explore a public movie dataset and visualise rating trends.",
+      "technologies": [
+        "Python",
+        "Pandas",
+        "Matplotlib"
+      ],
+      "required_skills": [
+        "python",
+        "pandas_numpy",
+        "data_visualization"
+      ],
+      "estimated_completion": "1 week",
+      "career_ids": [
+        "data_analyst",
+        "data_scientist"
+      ]
+    },
+    {
+      "id": "proj_sales_dashboard",
+      "title": "Retail Sales Dashboard",
+      "difficulty": "Beginner",
+      "description": "Interactive sales dashboard with KPIs and regional filters.",
+      "technologies": [
+        "Power BI",
+        "Excel"
+      ],
+      "required_skills": [
+        "power_bi",
+        "excel",
+        "data_visualization"
+      ],
+      "estimated_completion": "1 week",
+      "career_ids": [
+        "data_analyst"
+      ]
+    },
+    {
+      "id": "proj_house_price_prediction",
+      "title": "House Price Prediction",
+      "difficulty": "Intermediate",
+      "description": "Regression model predicting prices with feature engineering.",
+      "technologies": [
+        "Python",
+        "scikit-learn",
+        "Pandas"
+      ],
+      "required_skills": [
+        "python",
+        "machine_learning",
+        "pandas_numpy",
+        "statistics"
+      ],
+      "estimated_completion": "2 weeks",
+      "career_ids": [
+        "data_scientist",
+        "machine_learning_engineer"
+      ]
+    },
+    {
+      "id": "proj_review_sentiment_analysis",
+      "title": "Product Review Sentiment Analysis",
+      "difficulty": "Intermediate",
+      "description": "Classify customer reviews as positive or negative using NLP.",
+      "technologies": [
+        "Python",
+        "scikit-learn",
+        "spaCy"
+      ],
+      "required_skills": [
+        "nlp",
+        "machine_learning",
+        "python"
+      ],
+      "estimated_completion": "2 weeks",
+      "career_ids": [
+        "data_scientist",
+        "machine_learning_engineer"
+      ]
+    },
+    {
+      "id": "proj_image_classifier_cnn",
+      "title": "Image Classifier with a CNN",
+      "difficulty": "Advanced",
+      "description": "Train a convolutional network to classify images.",
+      "technologies": [
+        "Python",
+        "TensorFlow",
+        "Keras"
+      ],
+      "required_skills": [
+        "deep_learning",
+        "machine_learning",
+        "python"
+      ],
+      "estimated_completion": "3 weeks",
+      "career_ids": [
+        "machine_learning_engineer"
+      ]
+    },
+    {
+      "id": "proj_ml_model_deployment",
+      "title": "Containerised ML Model Service",
+      "difficulty": "Advanced",
+      "description": "Serve a trained model through a Flask API in a Docker container.",
+      "technologies": [
+        "Flask",
+        "Docker",
+        "scikit-learn"
+      ],
+      "required_skills": [
+        "docker",
+        "machine_learning",
+        "rest_apis",
+        "python"
+      ],
+      "estimated_completion": "2 weeks",
+      "career_ids": [
+        "machine_learning_engineer",
+        "devops_engineer"
+      ]
+    },
+    {
+      "id": "proj_expense_tracker_fullstack",
+      "title": "Full Stack Expense Tracker",
+      "difficulty": "Intermediate",
+      "description": "Track income and expenses with charts and category budgets.",
+      "technologies": [
+        "HTML",
+        "JavaScript",
+        "Flask",
+        "SQLite"
+      ],
+      "required_skills": [
+        "javascript",
+        "backend_frameworks",
+        "database_design",
+        "rest_apis"
+      ],
+      "estimated_completion": "3 weeks",
+      "career_ids": [
+        "full_stack_web_developer"
+      ]
+    },
+    {
+      "id": "proj_weather_app_react",
+      "title": "Weather App with React",
+      "difficulty": "Intermediate",
+      "description": "City weather search using a public API and reusable components.",
+      "technologies": [
+        "React",
+        "JavaScript",
+        "REST API"
+      ],
+      "required_skills": [
+        "frontend_frameworks",
+        "javascript",
+        "rest_apis"
+      ],
+      "estimated_completion": "2 weeks",
+      "career_ids": [
+        "frontend_developer",
+        "full_stack_web_developer"
+      ]
+    },
+    {
+      "id": "proj_ci_cd_pipeline",
+      "title": "CI/CD Pipeline with GitHub Actions",
+      "difficulty": "Intermediate",
+      "description": "Automated tests, Docker build and deployment on every push.",
+      "technologies": [
+        "GitHub Actions",
+        "Docker",
+        "pytest"
+      ],
+      "required_skills": [
+        "ci_cd",
+        "git",
+        "docker",
+        "software_testing"
+      ],
+      "estimated_completion": "1 week",
+      "career_ids": [
+        "devops_engineer",
+        "software_engineer"
+      ]
+    },
+    {
+      "id": "proj_linux_hardening_lab",
+      "title": "Linux Server Hardening Lab",
+      "difficulty": "Intermediate",
+      "description": "Secure a VM with SSH keys, a firewall and automatic updates.",
+      "technologies": [
+        "Linux",
+        "SSH",
+        "Firewall"
+      ],
+      "required_skills": [
+        "linux",
+        "security_fundamentals",
+        "networking"
+      ],
+      "estimated_completion": "1 week",
+      "career_ids": [
+        "cybersecurity_analyst",
+        "cloud_engineer",
+        "devops_engineer"
+      ]
+    },
+    {
+      "id": "proj_password_auditor",
+      "title": "Password Strength Auditor",
+      "difficulty": "Beginner",
+      "description": "Tool that scores passwords and demonstrates safe hashing.",
+      "technologies": [
+        "Python",
+        "hashlib"
+      ],
+      "required_skills": [
+        "python",
+        "cryptography_basics",
+        "security_fundamentals"
+      ],
+      "estimated_completion": "1 week",
+      "career_ids": [
+        "cybersecurity_analyst"
+      ]
+    },
+    {
+      "id": "proj_traffic_analyzer",
+      "title": "Network Traffic Analyzer",
+      "difficulty": "Advanced",
+      "description": "Parse packet captures and flag suspicious patterns.",
+      "technologies": [
+        "Python",
+        "Wireshark",
+        "Scapy"
+      ],
+      "required_skills": [
+        "networking",
+        "threat_analysis",
+        "python"
+      ],
+      "estimated_completion": "3 weeks",
+      "career_ids": [
+        "cybersecurity_analyst"
+      ]
+    },
+    {
+      "id": "proj_mobile_task_manager",
+      "title": "Mobile Task Manager",
+      "difficulty": "Intermediate",
+      "description": "Android task manager with local storage and reminders.",
+      "technologies": [
+        "Kotlin",
+        "Android Studio"
+      ],
+      "required_skills": [
+        "mobile_development",
+        "ui_design",
+        "data_structures"
+      ],
+      "estimated_completion": "4 weeks",
+      "career_ids": [
+        "mobile_app_developer"
+      ]
+    },
+    {
+      "id": "proj_app_redesign_case_study",
+      "title": "App Redesign Case Study",
+      "difficulty": "Beginner",
+      "description": "Audit and redesign an existing mobile app in Figma.",
+      "technologies": [
+        "Figma"
+      ],
+      "required_skills": [
+        "ui_design",
+        "ux_research",
+        "wireframing_prototyping"
+      ],
+      "estimated_completion": "2 weeks",
+      "career_ids": [
+        "ui_ux_designer",
+        "frontend_developer"
+      ]
+    },
+    {
+      "id": "proj_usability_study",
+      "title": "Usability Study Report",
+      "difficulty": "Intermediate",
+      "description": "Plan, run and report a usability test with five participants.",
+      "technologies": [
+        "Figma",
+        "Surveys"
+      ],
+      "required_skills": [
+        "ux_research",
+        "communication",
+        "critical_thinking"
+      ],
+      "estimated_completion": "2 weeks",
+      "career_ids": [
+        "ui_ux_designer",
+        "product_manager"
+      ]
+    },
+    {
+      "id": "proj_cloud_static_hosting",
+      "title": "Static Site on Cloud Hosting",
+      "difficulty": "Beginner",
+      "description": "Deploy a static website with a CDN and custom domain.",
+      "technologies": [
+        "Cloud hosting",
+        "Git"
+      ],
+      "required_skills": [
+        "cloud_basics",
+        "html_css",
+        "git"
+      ],
+      "estimated_completion": "1 week",
+      "career_ids": [
+        "cloud_engineer",
+        "devops_engineer",
+        "full_stack_web_developer"
+      ]
+    },
+    {
+      "id": "proj_library_management_system",
+      "title": "Library Management System",
+      "difficulty": "Beginner",
+      "description": "Object-oriented application managing books and members.",
+      "technologies": [
+        "Java",
+        "SQL"
+      ],
+      "required_skills": [
+        "java",
+        "sql",
+        "data_structures",
+        "database_design"
+      ],
+      "estimated_completion": "2 weeks",
+      "career_ids": [
+        "software_engineer",
+        "backend_developer"
+      ]
+    },
+    {
+      "id": "proj_product_requirements_doc",
+      "title": "Product Requirements Document",
+      "difficulty": "Beginner",
+      "description": "Write a PRD with user stories and success metrics for a new feature.",
+      "technologies": [
+        "Documentation"
+      ],
+      "required_skills": [
+        "product_thinking",
+        "requirements_analysis",
+        "technical_writing"
+      ],
+      "estimated_completion": "1 week",
+      "career_ids": [
+        "product_manager",
+        "business_analyst"
+      ]
+    },
+    {
+      "id": "proj_algorithm_visualizer",
+      "title": "Algorithm Visualizer",
+      "difficulty": "Intermediate",
+      "description": "Animate sorting and pathfinding algorithms in the browser.",
+      "technologies": [
+        "JavaScript",
+        "Canvas"
+      ],
+      "required_skills": [
+        "algorithms",
+        "data_structures",
+        "javascript"
+      ],
+      "estimated_completion": "2 weeks",
+      "career_ids": [
+        "software_engineer",
+        "frontend_developer"
+      ]
+    }
+  ]
+}

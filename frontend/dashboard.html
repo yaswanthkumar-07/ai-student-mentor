@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="css/main.css">
+  <title>Student Dashboard - AI Student Mentor</title>
+</head>
+<body>
+  <div class="site-wrapper">
+    <header class="navbar">
+      <div class="nav-container">
+        <a class="brand" href="index.html">
+          <div class="brand-icon">🎓</div>
+          <div>
+            <strong>AI Student Mentor</strong>
+            <small style="display: block; font-size: 0.75rem; color: var(--text-muted); font-weight: normal;">Career Journey Platform</small>
+          </div>
+        </a>
+        <nav class="nav-links">
+          <a href="index.html">Home</a>
+          <a href="login.html">Login</a>
+          <a href="dashboard.html" class="active">Dashboard</a>
+          <a href="pages/career-explorer.html">Career Explorer</a>
+          <a href="pages/skill-gap.html">Skill Gap</a>
+          <a href="pages/learning-roadmap.html">Learning Roadmap</a>
+        </nav>
+        <div class="nav-user-status">
+          <a id="nav-user-pill" href="login.html" class="user-pill" title="Click to switch student profile">
+            <div class="avatar-initial">?</div>
+            <span>Select Profile</span>
+          </a>
+          <span id="backend-status" class="badge">Checking...</span>
+        </div>
+      </div>
+    </header>
+
+    <main class="main-content">
+      <!-- Error Alert -->
+      <div id="dashboard-error" class="alert alert-danger" style="display: none;"></div>
+
+      <!-- Empty State: No Student Profile Selected -->
+      <div id="dashboard-empty" class="empty-state" style="display: none;">
+        <span class="empty-state-icon">👤</span>
+        <h2>No Student Profile Selected</h2>
+        <p>Please select a demo student persona from the login page to view academic details, skill matrices, and personalized career roadmaps.</p>
+        <a href="login.html" class="btn btn-primary">Select Demo Student &rarr;</a>
+      </div>
+
+      <!-- Loading State -->
+      <div id="dashboard-loading" class="loading-container">
+        <div class="spinner"></div>
+        <p>Loading student profile...</p>
+      </div>
+
+      <!-- Content Container -->
+      <div id="dashboard-content" style="display: none;">
+        <!-- Profile Hero Banner -->
+        <div class="profile-hero">
+          <div class="profile-identity">
+            <div id="student-avatar" class="profile-avatar-lg">AR</div>
+            <div class="profile-info">
+              <span class="badge badge-primary" style="margin-bottom: 0.35rem;">Demo Student Profile</span>
+              <h1 id="student-name">Student Name</h1>
+              <div class="profile-sub">
+                <span id="student-email">email@example.com</span>
+                <span>•</span>
+                <span id="student-edu-sub">Program</span>
+                <span>•</span>
+                <span id="student-location">📍 Location</span>
+              </div>
+            </div>
+          </div>
+          <div style="display: flex; gap: 0.75rem; flex-wrap: wrap;">
+            <a href="pages/career-explorer.html" class="btn btn-primary">🧭 Explore Careers</a>
+            <a href="login.html" class="btn btn-secondary">Switch Persona</a>
+          </div>
+        </div>
+
+        <!-- Metric Stat Pills -->
+        <div class="stat-pills">
+          <div class="stat-pill-item">
+            <span class="val" id="stat-edu-level">-</span>
+            <span class="lbl">Degree Level</span>
+          </div>
+          <div class="stat-pill-item">
+            <span class="val" id="stat-skills-count">0</span>
+            <span class="lbl">Verified Skills</span>
+          </div>
+          <div class="stat-pill-item">
+            <span class="val" id="stat-target-count">0</span>
+            <span class="lbl">Target Careers</span>
+          </div>
+          <div class="stat-pill-item">
+            <span class="val" style="color: var(--success);">Active</span>
+            <span class="lbl">Status</span>
+          </div>
+        </div>
+
+        <!-- 2 Column Details: Left (Education & Interests), Right (Career Goals & Skills) -->
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 1.5rem; margin-bottom: 2.5rem;">
+          <!-- Left Column -->
+          <div style="display: flex; flex-direction: column; gap: 1.5rem;">
+            <!-- Education Card -->
+            <div class="card">
+              <div class="card-header">
+                <h3>📚 Academic Background</h3>
+                <span class="badge">Education</span>
+              </div>
+              <div class="card-body" id="education-details">
+                <p style="color: var(--text-muted);">Loading education...</p>
+              </div>
+            </div>
+
+            <!-- Interests Card -->
+            <div class="card">
+              <div class="card-header">
+                <h3>🎯 Interests & Passions</h3>
+                <span class="badge">Aspirations</span>
+              </div>
+              <div class="card-body">
+                <p style="font-size: 0.9rem; color: var(--text-secondary); margin-bottom: 0.75rem;">
+                  Areas of interest guiding career recommendations and project suggestions.
+                </p>
+                <div id="interests-chips" class="chips"></div>
+              </div>
+            </div>
+
+            <!-- Target Career Goals Card -->
+            <div class="card">
+              <div class="card-header">
+                <h3>🏆 Career Goals & Target</h3>
+                <a href="pages/career-explorer.html" class="btn btn-sm btn-outline">Explore All &rarr;</a>
+              </div>
+              <div class="card-body">
+                <div id="career-goals-container"></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right Column -->
+          <div style="display: flex; flex-direction: column; gap: 1.5rem;">
+            <!-- Skills Matrix Card -->
+            <div class="card" style="height: 100%;">
+              <div class="card-header">
+                <div>
+                  <h3 style="margin: 0;">⚡ Skills Matrix</h3>
+                  <small style="color: var(--text-muted);">Proficiency breakdown across technical and core competencies</small>
+                </div>
+                <div style="display: flex; gap: 0.35rem; font-size: 0.75rem;">
+                  <span class="chip chip-level-beginner" style="padding: 0.1rem 0.4rem;">Beginner</span>
+                  <span class="chip chip-level-intermediate" style="padding: 0.1rem 0.4rem;">Intermediate</span>
+                  <span class="chip chip-level-advanced" style="padding: 0.1rem 0.4rem;">Advanced</span>
+                </div>
+              </div>
+              <div class="card-body">
+                <div id="skills-container" style="display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 0.75rem; max-height: 480px; overflow-y: auto; padding-right: 0.25rem;">
+                  <p style="color: var(--text-muted);">Loading skills...</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Platform Modules Overview -->
+        <div style="margin-top: 3rem;">
+          <div style="display: flex; justify-content: space-between; align-items: flex-end; margin-bottom: 1.25rem;">
+            <div>
+              <h2 style="margin: 0;">Lean Edition Platform Modules</h2>
+              <p style="margin: 0.25rem 0 0; color: var(--text-secondary);">Access all 4 core modules designed for your student career trajectory.</p>
+            </div>
+            <a href="pages/career-explorer.html" class="btn btn-sm btn-outline">Browse Careers</a>
+          </div>
+
+          <div class="grid grid-cols-4">
+            <div class="card" style="border-color: var(--primary-border); background: var(--primary-light);">
+              <span class="feature-badge-live">Live</span>
+              <h3 style="font-size: 1.15rem; margin-top: 0.5rem;">👤 Student Dashboard</h3>
+              <p style="font-size: 0.875rem; color: var(--text-secondary); margin-bottom: 1rem;">
+                Review academic standing, verified skills matrix, and career preferences.
+              </p>
+              <a href="dashboard.html" class="btn btn-sm btn-primary" style="margin-top: auto;">Current View</a>
+            </div>
+
+            <div class="card" style="border-color: var(--primary-border); background: var(--primary-light);">
+              <span class="feature-badge-live">Live</span>
+              <h3 style="font-size: 1.15rem; margin-top: 0.5rem;">🧭 Career Explorer</h3>
+              <p style="font-size: 0.875rem; color: var(--text-secondary); margin-bottom: 1rem;">
+                Explore industry career paths, market demand, and select your target career.
+              </p>
+              <a href="pages/career-explorer.html" class="btn btn-sm btn-primary" style="margin-top: auto;">Open Explorer &rarr;</a>
+            </div>
+
+            <div class="card" style="border-color: var(--primary-border); background: var(--primary-light);">
+              <span class="feature-badge-live">Live</span>
+              <h3 style="font-size: 1.15rem; margin-top: 0.5rem;">📊 Skill Gap Analysis</h3>
+              <p style="font-size: 0.875rem; color: var(--text-secondary); margin-bottom: 1rem;">
+                Compare your current skills against target role prerequisites with readiness scoring.
+              </p>
+              <a href="pages/skill-gap.html" class="btn btn-sm btn-primary" style="margin-top: auto;">Analyze Gaps &rarr;</a>
+            </div>
+
+            <div class="card" style="border-color: var(--primary-border); background: var(--primary-light);">
+              <span class="feature-badge-live">Live</span>
+              <h3 style="font-size: 1.15rem; margin-top: 0.5rem;">🗺️ Learning Roadmap</h3>
+              <p style="font-size: 0.875rem; color: var(--text-secondary); margin-bottom: 1rem;">
+                Personalized stage-by-stage learning curriculum with interactive task progress tracking.
+              </p>
+              <a href="pages/learning-roadmap.html" class="btn btn-sm btn-primary" style="margin-top: auto;">View Roadmap &rarr;</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer class="site-footer">
+      <p>AI Student Mentor &copy; 2026. Demonstration Application. Built with Python Flask and Vanilla JavaScript.</p>
+    </footer>
+  </div>
+
+  <script src="js/config.js"></script>
+  <script src="js/utils.js"></script>
+  <script src="js/api.js"></script>
+  <script src="js/status.js"></script>
+  <script src="js/dashboard.js"></script>
+</body>
+</html>

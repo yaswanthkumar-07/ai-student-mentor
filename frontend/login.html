@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="css/main.css">
+  <title>Login - Select Demo Student - AI Student Mentor</title>
+</head>
+<body>
+  <div class="site-wrapper">
+    <header class="navbar">
+      <div class="nav-container">
+        <a class="brand" href="index.html">
+          <div class="brand-icon">🎓</div>
+          <div>
+            <strong>AI Student Mentor</strong>
+            <small style="display: block; font-size: 0.75rem; color: var(--text-muted); font-weight: normal;">Career Guidance Platform — Lean Edition</small>
+          </div>
+        </a>
+        <nav class="nav-links">
+          <a href="index.html">Home</a>
+          <a href="login.html" class="active">Login</a>
+          <a href="dashboard.html">Dashboard</a>
+          <a href="pages/career-explorer.html">Career Explorer</a>
+          <a href="pages/skill-gap.html">Skill Gap</a>
+          <a href="pages/learning-roadmap.html">Roadmap</a>
+        </nav>
+        <div class="nav-user-status">
+          <span id="backend-status" class="badge">Checking backend...</span>
+        </div>
+      </div>
+    </header>
+
+    <main class="main-content">
+      <div style="max-width: 900px; margin: 0 auto; text-align: center; margin-bottom: 2.5rem;">
+        <span class="badge badge-primary" style="margin-bottom: 0.75rem;">Interactive Demo Profiles</span>
+        <h1>Select a Student Persona</h1>
+        <p class="lead-text">Choose any demonstration student profile below to explore personalized dashboard analytics, skill matrices, skill gap analysis, and target career roadmaps.</p>
+        <p><small style="color: var(--text-muted);">This is a demonstration system; no password or authentication credentials are required.</small></p>
+      </div>
+
+      <div id="login-error" class="alert alert-danger" style="display: none; max-width: 900px; margin: 0 auto 1.5rem;"></div>
+
+      <div id="login-loading" class="loading-container">
+        <div class="spinner"></div>
+        <p>Loading demo student profiles from backend...</p>
+      </div>
+
+      <div id="student-cards-container" class="grid" style="max-width: 1000px; margin: 0 auto;"></div>
+    </main>
+
+    <footer class="site-footer">
+      <p>AI Student Mentor &copy; 2026. Demonstration Application (Lean Edition). Built with Python Flask and Vanilla JavaScript.</p>
+    </footer>
+  </div>
+
+  <script src="js/config.js"></script>
+  <script src="js/utils.js"></script>
+  <script src="js/api.js"></script>
+  <script src="js/status.js"></script>
+  <script src="js/login.js"></script>
+</body>
+</html>

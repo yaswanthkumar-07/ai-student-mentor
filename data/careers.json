@@ -1,0 +1,366 @@
+{
+  "description": "Demo career paths.",
+  "careers": [
+    {
+      "id": "data_scientist",
+      "title": "Data Scientist",
+      "category": "Data & AI",
+      "description": "Extracts insights and builds predictive models from data to support decisions.",
+      "required_skills": [
+        "python",
+        "statistics",
+        "pandas_numpy",
+        "machine_learning",
+        "data_visualization",
+        "sql"
+      ],
+      "recommended_skills": [
+        "deep_learning",
+        "communication"
+      ],
+      "prerequisites": [
+        "Basic programming",
+        "Probability and algebra fundamentals",
+        "Comfort with spreadsheets"
+      ],
+      "related_careers": [
+        "machine_learning_engineer",
+        "data_analyst"
+      ]
+    },
+    {
+      "id": "machine_learning_engineer",
+      "title": "Machine Learning Engineer",
+      "category": "Data & AI",
+      "description": "Designs, trains and deploys machine learning systems in production.",
+      "required_skills": [
+        "python",
+        "machine_learning",
+        "deep_learning",
+        "pandas_numpy",
+        "docker",
+        "git"
+      ],
+      "recommended_skills": [
+        "cloud_basics",
+        "ci_cd"
+      ],
+      "prerequisites": [
+        "Solid Python skills",
+        "Linear algebra and calculus basics",
+        "Understanding of statistics"
+      ],
+      "related_careers": [
+        "data_scientist",
+        "devops_engineer"
+      ]
+    },
+    {
+      "id": "data_analyst",
+      "title": "Data Analyst",
+      "category": "Data & AI",
+      "description": "Turns business data into reports and dashboards that guide decisions.",
+      "required_skills": [
+        "sql",
+        "excel",
+        "statistics",
+        "data_visualization",
+        "power_bi",
+        "communication"
+      ],
+      "recommended_skills": [
+        "python"
+      ],
+      "prerequisites": [
+        "Basic maths",
+        "Spreadsheet familiarity"
+      ],
+      "related_careers": [
+        "business_analyst",
+        "data_scientist"
+      ]
+    },
+    {
+      "id": "full_stack_web_developer",
+      "title": "Full Stack Web Developer",
+      "category": "Web Development",
+      "description": "Builds complete web applications from user interface to database.",
+      "required_skills": [
+        "html_css",
+        "javascript",
+        "frontend_frameworks",
+        "backend_frameworks",
+        "rest_apis",
+        "database_design",
+        "git"
+      ],
+      "recommended_skills": [
+        "python",
+        "cloud_basics"
+      ],
+      "prerequisites": [
+        "Basic programming logic",
+        "Comfort using a browser's developer tools"
+      ],
+      "related_careers": [
+        "frontend_developer",
+        "backend_developer"
+      ]
+    },
+    {
+      "id": "backend_developer",
+      "title": "Backend Developer",
+      "category": "Web Development",
+      "description": "Creates the server-side logic, APIs and databases behind applications.",
+      "required_skills": [
+        "python",
+        "backend_frameworks",
+        "rest_apis",
+        "sql",
+        "database_design",
+        "git",
+        "software_testing"
+      ],
+      "recommended_skills": [
+        "docker",
+        "ci_cd"
+      ],
+      "prerequisites": [
+        "Basic programming",
+        "Understanding of how the web works"
+      ],
+      "related_careers": [
+        "full_stack_web_developer",
+        "software_engineer"
+      ]
+    },
+    {
+      "id": "frontend_developer",
+      "title": "Frontend Developer",
+      "category": "Web Development",
+      "description": "Builds accessible, responsive user interfaces for the web.",
+      "required_skills": [
+        "html_css",
+        "javascript",
+        "frontend_frameworks",
+        "ui_design",
+        "git",
+        "software_testing"
+      ],
+      "recommended_skills": [
+        "rest_apis"
+      ],
+      "prerequisites": [
+        "Basic programming logic",
+        "Eye for visual design"
+      ],
+      "related_careers": [
+        "full_stack_web_developer",
+        "ui_ux_designer"
+      ]
+    },
+    {
+      "id": "devops_engineer",
+      "title": "DevOps Engineer",
+      "category": "Infrastructure",
+      "description": "Automates building, testing, deploying and monitoring software.",
+      "required_skills": [
+        "linux",
+        "docker",
+        "ci_cd",
+        "cloud_basics",
+        "git",
+        "networking",
+        "python"
+      ],
+      "recommended_skills": [
+        "security_fundamentals"
+      ],
+      "prerequisites": [
+        "Basic programming or scripting",
+        "Operating system fundamentals"
+      ],
+      "related_careers": [
+        "cloud_engineer",
+        "backend_developer"
+      ]
+    },
+    {
+      "id": "cloud_engineer",
+      "title": "Cloud Engineer",
+      "category": "Infrastructure",
+      "description": "Designs and operates scalable, secure infrastructure on public clouds.",
+      "required_skills": [
+        "cloud_basics",
+        "linux",
+        "networking",
+        "docker",
+        "security_fundamentals",
+        "python"
+      ],
+      "recommended_skills": [
+        "ci_cd"
+      ],
+      "prerequisites": [
+        "Networking basics",
+        "Operating system fundamentals"
+      ],
+      "related_careers": [
+        "devops_engineer",
+        "cybersecurity_analyst"
+      ]
+    },
+    {
+      "id": "cybersecurity_analyst",
+      "title": "Cybersecurity Analyst",
+      "category": "Security",
+      "description": "Monitors systems, investigates incidents and hardens defences against attacks.",
+      "required_skills": [
+        "security_fundamentals",
+        "networking",
+        "linux",
+        "threat_analysis",
+        "cryptography_basics",
+        "python"
+      ],
+      "recommended_skills": [
+        "technical_writing"
+      ],
+      "prerequisites": [
+        "Networking basics",
+        "Curiosity about how systems fail"
+      ],
+      "related_careers": [
+        "cloud_engineer",
+        "devops_engineer"
+      ]
+    },
+    {
+      "id": "ui_ux_designer",
+      "title": "UI/UX Designer",
+      "category": "Design",
+      "description": "Researches users and designs intuitive, attractive digital products.",
+      "required_skills": [
+        "ui_design",
+        "ux_research",
+        "wireframing_prototyping",
+        "communication",
+        "critical_thinking"
+      ],
+      "recommended_skills": [
+        "html_css"
+      ],
+      "prerequisites": [
+        "Interest in design and psychology",
+        "Familiarity with common apps and websites"
+      ],
+      "related_careers": [
+        "frontend_developer",
+        "product_manager"
+      ]
+    },
+    {
+      "id": "software_engineer",
+      "title": "Software Engineer",
+      "category": "Software Development",
+      "description": "Designs, builds and maintains reliable software systems.",
+      "required_skills": [
+        "data_structures",
+        "algorithms",
+        "python",
+        "git",
+        "software_testing",
+        "problem_solving",
+        "database_design"
+      ],
+      "recommended_skills": [
+        "java",
+        "teamwork"
+      ],
+      "prerequisites": [
+        "Programming fundamentals",
+        "Discrete maths basics"
+      ],
+      "related_careers": [
+        "backend_developer",
+        "mobile_app_developer"
+      ]
+    },
+    {
+      "id": "mobile_app_developer",
+      "title": "Mobile App Developer",
+      "category": "Software Development",
+      "description": "Builds Android and cross-platform applications for phones and tablets.",
+      "required_skills": [
+        "mobile_development",
+        "java",
+        "rest_apis",
+        "ui_design",
+        "git",
+        "data_structures"
+      ],
+      "recommended_skills": [
+        "software_testing"
+      ],
+      "prerequisites": [
+        "Object-oriented programming basics",
+        "Interest in mobile user experience"
+      ],
+      "related_careers": [
+        "software_engineer",
+        "frontend_developer"
+      ]
+    },
+    {
+      "id": "product_manager",
+      "title": "Product Manager",
+      "category": "Business & Product",
+      "description": "Defines what to build and why, aligning users, business and engineering.",
+      "required_skills": [
+        "product_thinking",
+        "requirements_analysis",
+        "communication",
+        "leadership",
+        "project_management",
+        "critical_thinking"
+      ],
+      "recommended_skills": [
+        "data_visualization"
+      ],
+      "prerequisites": [
+        "Curiosity about users and markets",
+        "Basic understanding of software development"
+      ],
+      "related_careers": [
+        "business_analyst",
+        "ui_ux_designer"
+      ]
+    },
+    {
+      "id": "business_analyst",
+      "title": "Business Analyst",
+      "category": "Business & Product",
+      "description": "Bridges business needs and technical teams through analysis and documentation.",
+      "required_skills": [
+        "requirements_analysis",
+        "sql",
+        "excel",
+        "communication",
+        "critical_thinking",
+        "technical_writing"
+      ],
+      "recommended_skills": [
+        "power_bi",
+        "project_management"
+      ],
+      "prerequisites": [
+        "Basic business knowledge",
+        "Spreadsheet familiarity"
+      ],
+      "related_careers": [
+        "product_manager",
+        "data_analyst"
+      ]
+    }
+  ]
+}

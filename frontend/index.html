@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="css/main.css">
+  <title>AI Student Mentor - Your Career Journey, Simplified.</title>
+</head>
+<body>
+  <div class="site-wrapper">
+    <!-- Navigation Bar -->
+    <header class="navbar">
+      <div class="nav-container">
+        <a class="brand" href="index.html">
+          <div class="brand-icon">🎓</div>
+          <div>
+            <strong>AI Student Mentor</strong>
+            <small style="display: block; font-size: 0.75rem; color: var(--text-muted); font-weight: normal;">Career Guidance Platform — Lean Edition</small>
+          </div>
+        </a>
+        <nav class="nav-links">
+          <a href="index.html" class="active">Home</a>
+          <a href="login.html">Login</a>
+          <a href="dashboard.html">Dashboard</a>
+          <a href="pages/career-explorer.html">Career Explorer</a>
+          <a href="pages/skill-gap.html">Skill Gap</a>
+          <a href="pages/learning-roadmap.html">Roadmap</a>
+        </nav>
+        <div class="nav-user-status">
+          <a id="nav-user-pill" href="login.html" class="user-pill" title="Click to view or switch profile">
+            <div class="avatar-initial">?</div>
+            <span>Select Student</span>
+          </a>
+          <span id="backend-status" class="badge">Checking...</span>
+        </div>
+      </div>
+    </header>
+
+    <main class="main-content">
+      <!-- Hero Section -->
+      <section class="hero-section">
+        <span class="badge badge-primary" style="margin-bottom: 1rem;">Lean Edition • 4 Focused Modules</span>
+        <h1>Your Career Journey, Simplified.</h1>
+        <p class="hero-subtitle">
+          Personalized career guidance for students. Discover in-demand career paths, benchmark your verified skills against role requirements, identify critical skill gaps, and follow structured learning roadmaps.
+        </p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="login.html">Select Demo Student &rarr;</a>
+          <a class="btn btn-secondary" href="pages/career-explorer.html">🧭 Explore Careers</a>
+          <a class="btn btn-outline" href="dashboard.html">View Dashboard</a>
+        </div>
+        <p style="margin: 0; font-size: 0.875rem; color: var(--text-muted);">
+          ⚡ Instant local simulation with zero external API friction. No passwords or authentication required.
+        </p>
+      </section>
+
+      <!-- Key Value Pillars: The 4 Lean Edition Modules -->
+      <section style="margin: 3rem 0;">
+        <div style="text-align: center; max-width: 700px; margin: 0 auto 2.5rem;">
+          <h2 style="font-size: 2rem; margin-bottom: 0.5rem;">The 4 Core Platform Modules</h2>
+          <p style="color: var(--text-secondary); font-size: 1.05rem;">
+            A unified, lightweight system designed specifically for students to achieve career readiness.
+          </p>
+        </div>
+
+        <div class="feature-grid">
+          <!-- Module 1: Student Dashboard -->
+          <div class="feature-card">
+            <span class="feature-badge-live">Module 1</span>
+            <div class="feature-icon">👤</div>
+            <h3 style="font-size: 1.2rem;">Student Profile & Dashboard</h3>
+            <p style="font-size: 0.9rem; color: var(--text-secondary); margin-bottom: 1.25rem;">
+              Comprehensive academic tracking, student persona details, verified skills inventory with proficiency levels, and target goals.
+            </p>
+            <a href="dashboard.html" class="btn btn-sm btn-outline">Open Dashboard &rarr;</a>
+          </div>
+
+          <!-- Module 2: Career Explorer -->
+          <div class="feature-card">
+            <span class="feature-badge-live">Module 2</span>
+            <div class="feature-icon">🧭</div>
+            <h3 style="font-size: 1.2rem;">Career Explorer</h3>
+            <p style="font-size: 0.9rem; color: var(--text-secondary); margin-bottom: 1.25rem;">
+              Filter across domains like Data Science, Cloud, Engineering, and Design. Inspect required skills, prerequisites, and select your target.
+            </p>
+            <a href="pages/career-explorer.html" class="btn btn-sm btn-outline">Explore Careers &rarr;</a>
+          </div>
+
+          <!-- Module 3: Skill Gap Analysis -->
+          <div class="feature-card">
+            <span class="feature-badge-live">Module 3</span>
+            <div class="feature-icon">📊</div>
+            <h3 style="font-size: 1.2rem;">Skill Gap Analysis</h3>
+            <p style="font-size: 0.9rem; color: var(--text-secondary); margin-bottom: 1.25rem;">
+              Deterministic comparison classifying skills into Acquired, Needs Improvement, Missing, and Recommended with actual coverage scoring.
+            </p>
+            <a href="pages/skill-gap.html" class="btn btn-sm btn-outline">Analyze Gaps &rarr;</a>
+          </div>
+
+          <!-- Module 4: Learning Roadmap -->
+          <div class="feature-card">
+            <span class="feature-badge-live">Module 4</span>
+            <div class="feature-icon">🗺️</div>
+            <h3 style="font-size: 1.2rem;">Personalized Roadmap</h3>
+            <p style="font-size: 0.9rem; color: var(--text-secondary); margin-bottom: 1.25rem;">
+              Stage-by-stage learning curriculum with curated educational resources and persistent progress tracking saved per student.
+            </p>
+            <a href="pages/learning-roadmap.html" class="btn btn-sm btn-outline">View Roadmap &rarr;</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Architecture and Trust Banner -->
+      <section style="background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius-lg); padding: 2rem; margin: 3rem 0; box-shadow: var(--shadow-sm);">
+        <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1.5rem;">
+          <div>
+            <span class="badge badge-success" style="margin-bottom: 0.5rem;">Fast & Lightweight</span>
+            <h3 style="margin: 0.25rem 0 0.5rem;">Built for Reliability and Offline Resilience</h3>
+            <p style="margin: 0; color: var(--text-secondary); max-width: 600px; font-size: 0.925rem;">
+              Powered by Python 3 & Flask backend with curated JSON datasets, pure vanilla ES6 JavaScript frontend, and zero external framework bloat.
+            </p>
+          </div>
+          <div style="display: flex; gap: 0.75rem;">
+            <a href="login.html" class="btn btn-primary">Try Demo Students &rarr;</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div style="max-width: 1200px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1rem;">
+        <div>
+          <strong>AI Student Mentor</strong> &copy; 2026. Demonstration Application (Lean Edition).
+        </div>
+        <div style="display: flex; gap: 1.25rem; font-size: 0.85rem;">
+          <a href="index.html" style="color: var(--text-muted); text-decoration: none;">Home</a>
+          <a href="login.html" style="color: var(--text-muted); text-decoration: none;">Login</a>
+          <a href="dashboard.html" style="color: var(--text-muted); text-decoration: none;">Dashboard</a>
+          <a href="pages/career-explorer.html" style="color: var(--text-muted); text-decoration: none;">Career Explorer</a>
+          <a href="pages/skill-gap.html" style="color: var(--text-muted); text-decoration: none;">Skill Gap</a>
+          <a href="pages/learning-roadmap.html" style="color: var(--text-muted); text-decoration: none;">Roadmap</a>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <script src="js/config.js"></script>
+  <script src="js/utils.js"></script>
+  <script src="js/api.js"></script>
+  <script src="js/status.js"></script>
+</body>
+</html>
