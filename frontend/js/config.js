@@ -1,4 +1,4 @@
-```javascript
+
 // Frontend configuration. Contains no secrets: API keys live only on the backend.
 window.APP_CONFIG = Object.freeze({
   APP_NAME: "AI Student Mentor",
@@ -32,4 +32,3 @@ window.APP_CONFIG = Object.freeze({
     post: (path, data) => request(path, { method: "POST", body: JSON.stringify(data) }),
   };
 })();
-```
